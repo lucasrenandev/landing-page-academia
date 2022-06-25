@@ -17,7 +17,7 @@ html, body {
     background-size: cover;
 }
 
-/* ==== nav ==== */
+/* ==== NAV ==== */
 
 nav {
     height: 60px;
@@ -96,7 +96,7 @@ nav ul li a:hover::before {
     color: white;
 }
 
-/* ==== main ==== */
+/* ==== MAIN ==== */
 
 main {
     height: calc(100% - 60px);
@@ -148,10 +148,6 @@ main {
     position: relative;
 }
 
-.main-buttons button a:hover {
-    color: #FBFF00;
-}
-
 .main-buttons a {
     text-decoration: none;
     text-transform: uppercase;
@@ -159,3 +155,8 @@ main {
     color: white;
     letter-spacing: 0.2rem;
 }
+
+.main-buttons button a:hover {
+    color: #FBFF00;
+}
+
