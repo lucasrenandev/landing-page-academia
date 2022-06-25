@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+html, body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(#111111cc, #141414), url('../image/img.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-position-y: 0;
+    background-size: cover;
+}
+
+/* ==== nav ==== */
+
+nav {
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 5rem;
+}
+
+.logo a {
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 0.2rem;
+}
+
+.menu {
+    cursor: pointer;
+    display: none;
+}
+
+.menu i {
+    color: white;
+    font-size: 2.2rem;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 5px;
+}
+
+nav ul li a {
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 500;
+    position: relative;
+}
+
+nav ul li a::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: #FBFF00;
+    transition: all 1.2s ease;
+}
+
+nav ul li a:hover::before {
+    transition: all 1.2s ease;
+    width: 100%;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social i {
+    font-size: 1.3rem;
+    color: white;
+}
+
+/* ==== main ==== */
+
+main {
+    height: calc(100% - 60px);
+}
+
+.main-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.main-text {
+    text-align: center;
+}
+
+.main-text h1 {
+    color: white;
+    font-size: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.main-text h2 {
+    color: #A5A5A5;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+.main-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.main-buttons button {
+    width: 250px;
+    height: 65px;
+    border-radius: 20px;
+    border: 1px solid white;
+    outline: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 10px; 
+    position: relative;
+}
+
+.main-buttons button a:hover {
+    color: #FBFF00;
+}
+
+.main-buttons a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    color: white;
+    letter-spacing: 0.2rem;
+}
