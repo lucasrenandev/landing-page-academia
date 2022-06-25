@@ -1,0 +1,29 @@
+
+@media (max-width: 685px) {
+
+    nav {
+        padding: 0;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul {
+        display: none;
+    }
+}
+
+@media (max-width: 580px) {
+
+    nav {
+        padding: 0;
+    }
+
+    .main-buttons {
+        flex-direction: column;
+        margin: 0;
+    }
+
+}
