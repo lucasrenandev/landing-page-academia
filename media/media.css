@@ -31,7 +31,7 @@
 @media (max-width: 400px) {
 
    .logo a {
-        font-size: 1.2rem;
+        font-size: 1rem;
    }
 
    .main-text h1 {
@@ -39,7 +39,7 @@
    }
 
    .main-text h2 {
-        font-size: 1.1rem;
+        font-size: 1rem;
    }
 
    .main-buttons button {
