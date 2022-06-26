@@ -22,8 +22,32 @@
     }
 
     .main-buttons {
+
         flex-direction: column;
         margin: 0;
-    }
 
+    }
+}
+
+@media (max-width: 300px) {
+
+   .logo a {
+        font-size: 1.2rem;
+   }
+
+
+   .main-content {
+        height: 100%;
+   }
+   .main-text h1 {
+        font-size: 2.5rem;
+   }
+
+   .main-text h2 {
+        font-size: 1.1rem;
+   }
+
+   .main-buttons button {
+        width: 200px;
+   }
 }
