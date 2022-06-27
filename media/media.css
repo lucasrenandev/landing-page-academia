@@ -49,11 +49,10 @@
 @media (max-width: 217px) {
 
     .logo a {
-
         font-size: 0.8rem;
     }
-    .main-buttons button {
 
+    .main-buttons button {
         width: 170px;
     }
 }
