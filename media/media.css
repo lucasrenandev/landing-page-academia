@@ -17,10 +17,6 @@
 
 @media (max-width: 580px) {
 
-    nav {
-        padding: 0;
-    }
-
     .main-buttons {
 
         flex-direction: column;
