@@ -1,54 +1,77 @@
+@media screen and (max-width: 1200px) {
 
-@media (max-width: 685px) {
-
-    nav {
-        padding: 0;
+    header nav .menu {
+        display: block;
+        z-index: 2;
     }
 
-    .logo {
+    header nav {
+        padding: 0 2rem;
+    }
+
+    header nav ul {
+        position: fixed;
+        top: 0;
+        left: 0;
         width: 100%;
-        text-align: center;
+        height: 100vh;
+        background-color: #222;
+        flex-direction: column;
+        gap: 30px;
+        z-index: 2;
+        transition: .4s ease;
+        transform: translateY(-100%);
     }
 
-    nav ul {
-        display: none;
+    header nav ul.active {
+        transform: translateY(0);
+    }
+
+    header nav ul li a {
+        font-size: 1.5rem;
+    }
+
+    header nav ul .social {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    header nav ul .social i {
+        font-size: 2rem;
     }
 }
 
-@media (max-width: 580px) {
+@media screen and (max-width: 600px) {
+    
+    header nav {
+        padding: 0 1rem;
+    }
+    
+    main .main-text {
+        margin-bottom: 2rem;
+    }
 
-    .main-buttons {
-
+    main .main-buttons {
         flex-direction: column;
     }
 }
 
-@media (max-width: 400px) {
+@media screen and (max-width: 380px) {
 
-   .logo a {
+    header nav .logo a {
         font-size: 1rem;
-   }
-
-   .main-text h1 {
-        font-size: 2.5rem;
-   }
-
-   .main-text h2 {
-        font-size: 1rem;
-   }
-
-   .main-buttons button {
-        width: 200px;
-   }
-}
-
-@media (max-width: 220px) {
-
-    .logo a {
-        font-size: 0.8rem;
+        letter-spacing: 0.1rem;
     }
 
-    .main-buttons button {
-        width: 170px;
+    main .main-text h1 {
+        font-size: 2.1rem;
+    }
+
+    main .main-text h2 {
+        font-size: 1.1rem;
+    }
+
+    main .main-buttons button {
+        width: 240px;
     }
 }

@@ -19,8 +19,8 @@ body {
 
 /* ==== NAV ==== */
 
-nav {
-    height: 60px;
+header nav {
+    height: 80px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -28,29 +28,29 @@ nav {
     padding: 0 6rem;
 }
 
-.logo a {
+header .logo a {
     font-size: 1.2rem;
     font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
-    color: white;
+    color: #ffffff;
     letter-spacing: 0.2rem;
 }
 
-nav ul {
+header nav ul {
     display: flex;
     align-items: center;
     justify-content: center;
     list-style: none;
 }
 
-nav ul li {
+header nav ul li {
     margin: 0 5px;
 }
 
-nav ul li a {
+header nav ul li a {
     padding: 10px 15px;
-    color: white;
+    color: #ffffff;
     text-decoration: none;
     text-transform: uppercase;
     font-size: 1rem;
@@ -58,40 +58,46 @@ nav ul li a {
     position: relative;
 }
 
-nav ul li a::before {
+header nav ul li a::before {
     content: '';
     position: absolute;
     bottom: 0;
     left: 0;
     width: 0;
     height: 1px;
-    background-color: #FBFF00;
+    background-color: #fbff00;
     transition: all 1.5s ease;
 }
 
-nav ul li a:hover::before {
+header nav ul li a:hover::before {
     width: 100%;
 }
 
-.social {
+header nav .social {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
 }
 
-.social i {
+header nav .social i {
     font-size: 1.2rem;
-    color: white;
+    color: #ffffff;
+}
+
+header nav .menu {
+   filter: invert(1);
+   cursor: pointer;
+   display: none;
 }
 
 /* ==== MAIN ==== */
 
 main {
-    height: calc(100% - 60px);
+    height: calc(100% - 80px);
 }
 
-.main-content {
+main .main-content {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -99,42 +105,42 @@ main {
     align-items: center;
 }
 
-.main-text {
+main .main-text {
     max-width: 1000px;
     text-align: center;
-    padding: 10px;
+    padding: 12px;
     margin-bottom: 4rem;
 }
 
-.main-text h1 {
-    color: white;
+main .main-text h1 {
+    color: #ffffff;
     font-size: 3.5rem;
     margin-bottom: 1.5rem;
 }
 
-.main-text h2 {
+main .main-text h2 {
     color: #A5A5A5;
     font-size: 1.5rem;
     text-transform: uppercase;
     margin-bottom: 1.5rem;
 }
 
-.main-buttons {
+main .main-buttons {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 30px;
 }
 
-.main-buttons button {
+main .main-buttons button {
     position: relative;
     width: 250px;
     height: 60px;
     border-radius: 20px;
-    border: 1px solid white;
+    border: 1px solid #ffffff;
     outline: none;
     background-color: transparent;
-    color: white;
+    color: #ffffff;
     font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
@@ -144,11 +150,11 @@ main {
     transition: 1.5s;
 }
 
-.main-buttons button:hover {
-    color: #FBFF00;
+main .main-buttons button:hover {
+    color: #fBff00;
 }
 
-.main-buttons button::before {
+main .main-buttons button::before {
     content: '';
     position: absolute;
     bottom: 0;
@@ -161,6 +167,6 @@ main {
     transition: 1s;
 }
 
-.main-buttons button:hover::before {
+main .main-buttons button:hover::before {
     width: 100%;
 }
